@@ -52,6 +52,7 @@ a {
 }
 #main .candidates-link {
   left: 0;
+  color: #fff;
 }
 #main .issues-link:after {
   content: "\276F";
