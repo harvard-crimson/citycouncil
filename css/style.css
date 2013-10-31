@@ -1,0 +1,293 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../img/cityhall.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 100;
+  color: #222;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.page {
+  overflow: auto !important;
+}
+.nav-link {
+  position: absolute;
+  top: 50%;
+  padding: 0 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: lowercase;
+  -moz-transition: padding 0.2s;
+  -webkit-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+.nav-link:hover {
+  padding: 0 30px;
+}
+#main .candidates-link:before {
+  content: "\276E";
+  padding-right: 10px;
+}
+#main .candidates-link {
+  left: 0;
+}
+#main .issues-link:after {
+  content: "\276F";
+  padding-left: 10px;
+}
+#main .issues-link {
+  right: 0;
+}
+#candidates .nav-link:after {
+  content: "\276F";
+  padding-left: 10px;
+}
+#candidates .nav-link {
+  color: #fff;
+  right: 0;
+}
+#issues .nav-link:before {
+  content: "\276E";
+  padding-right: 10px;
+}
+#issues .nav-link {
+  color: #fff;
+  left: 0;
+}
+.main-title {
+  position: absolute;
+  top: 12%;
+  left: 0px;
+  overflow: hidden;
+  max-width: 40%;
+  padding: 20px 40px;
+  text-align: right;
+  outline: 1px dotted #000;
+  outline-offset: 10px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+}
+.main-title h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+}
+.main-title h2 {
+  margin: 40px 0 0;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: italic;
+}
+.main-intro {
+  position: absolute;
+  top: 58%;
+  right: 0px;
+  overflow: hidden;
+  max-width: 40%;
+  padding: 20px 40px;
+  outline: 1px dotted #000;
+  outline-offset: 10px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  line-height: 2em;
+}
+#candidates .page-content {
+  min-height: 200%;
+  padding: 40px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+}
+#candidates h1 {
+  margin: 0 0 30px;
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #fff;
+  font-size: 48px;
+}
+#candidates h1 strong {
+  font-weight: 700;
+}
+#candidates ul {
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+}
+#candidates ul li {
+  display: inline-block;
+  position: relative;
+  margin: 12px 24px 12px 0;
+}
+#candidates ul li .thumbnail {
+  border: 1px dotted #fff;
+  height: 160px;
+  width: 160px;
+}
+#candidates ul li .caption {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 160px;
+  width: 160px;
+  padding: 70px 10px 10px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#candidates ul li:hover .caption {
+  opacity: 1;
+}
+#issues .page-content {
+  min-height: 100%;
+  padding: 40px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+}
+#issues h1 {
+  margin: 0 0 30px;
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #fff;
+  font-size: 48px;
+  text-align: right;
+}
+#issues h1 strong {
+  font-weight: 700;
+}
+#issues .issues-main {
+  overflow: auto;
+  
+}
+#issues .sort-issue {
+  float: left;
+  padding-left:15%;
+  width: 25%;
+}
+#issues .sort-issue .issue {
+  font-size: 36px;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+#issues .sort-issue .issue:hover,
+#issues .sort-issue .issue.selected {
+  font-weight: 700;
+}
+#issues .sort-issue .clear-issues {
+  margin-top: 20px;
+  cursor: pointer;
+}
+#issues .sort-issue .clear-issues:hover {
+  text-decoration: underline;
+}
+#issues .sort-candidate {
+  float: left;
+  width: 20%;
+}
+#issues .sort-candidate .candidate {
+  font-size: 12px;
+  line-height: 1.8em;
+  cursor: pointer;
+}
+#issues .sort-candidate .candidate:hover,
+#issues .sort-candidate .candidate.selected {
+  font-weight: 700;
+}
+#issues .sort-candidate .clear-candidates {
+  margin-top: 20px;
+  cursor: pointer;
+}
+#issues .sort-candidate .clear-candidates:hover {
+  text-decoration: underline;
+}
+#issues .issues-quotes {
+  float: left;
+  width: 40%;
+}
+#issues .issues-quotes .quote {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 20px;
+}
+#issues .issues-quotes .quote:before {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  content: "\201C";
+  font-family: Georgia;
+  font-weight: 100;
+  font-size: 40px;
+}
+#issues .issues-quotes .quote-author {
+  margin-top: 10px;
+  padding-left: 40px;
+  font-weight: 400;
+}
+#issues .issues-quotes .quote-author:before {
+  content: "\2014";
+}
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+.modal {
+  position: absolute !important;
+  z-index: 200;
+  background: #fff;
+  width: 500px;
+  padding: 20px;
+  margin-left: -270px !important;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px #000;
+  display: none;
+}
+.biography h2 {
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+.biography .biography-photo {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.biography .biography-main {
+  float: right;
+  width: 380px;
+}
+.biography .biography-main .biography-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
