@@ -106,7 +106,7 @@ a {
   text-align: right;
   outline: 1px dotted #000;
   outline-offset: 10px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.7);
   color: #fff;
 }
 .main-title h1 {
@@ -129,7 +129,7 @@ a {
   padding: 20px 40px;
   outline: 1px dotted #000;
   outline-offset: 10px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.7);
   color: #fff;
   line-height: 1.7em;
   font-size: 0.9em;
@@ -137,7 +137,7 @@ a {
 #candidates .page-content {
   min-height: 200%;
   padding: 40px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.7);
   color: #fff;
 }
 #candidates h1 {
@@ -192,7 +192,7 @@ a {
 #issues .page-content {
   min-height: 100%;
   padding: 40px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.7);
   color: #fff;
 }
 #issues h1 {
@@ -268,6 +268,18 @@ a {
   font-weight: 100;
   font-size: 40px;
 }
+
+#issues .clear-issues{
+  position:absolute;
+  top: 165px;
+  padding: 0 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 100;
+  color:#fff;
+  left:90%;
+}
+
 #issues .issues-quotes .quote-author {
   margin-top: 10px;
   padding-left: 40px;

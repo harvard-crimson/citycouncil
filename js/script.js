@@ -47,6 +47,9 @@ $(function() {
     }
     return $("#quotes").fadeIn();
   };
+
+
+
   $(".issue").click(function(e) {
     var id, target;
     target = $(e.target);
@@ -77,7 +80,9 @@ $(function() {
   });
   $(".clear-issues").click(function() {
     issues = [];
+    candidates = [];
     $(".issue").removeClass("selected");
+    $(".candidate").removeClass("selected");
     return renderQuotes();
   });
   return $(".clear-candidates").click(function() {
