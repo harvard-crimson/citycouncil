@@ -28,7 +28,7 @@ $(function() {
       _ref = $("#quotes").children();
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         q = _ref[_i];
-        $(q).show();
+        $(q).hide();
       }
     } else {
       _ref1 = $("#quotes").children();
@@ -47,6 +47,9 @@ $(function() {
     }
     return $("#quotes").fadeIn();
   };
+
+
+
   $(".issue").click(function(e) {
     var id, target;
     target = $(e.target);
@@ -77,7 +80,9 @@ $(function() {
   });
   $(".clear-issues").click(function() {
     issues = [];
+    candidates = [];
     $(".issue").removeClass("selected");
+    $(".candidate").removeClass("selected");
     return renderQuotes();
   });
   return $(".clear-candidates").click(function() {
