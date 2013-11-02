@@ -46,6 +46,22 @@ a {
 .nav-link:hover {
   padding: 0 30px;
 }
+
+
+.linkback img{
+  background:rgba(0, 0, 0, 0.6);
+  padding: 2px 4px;
+  position:absolute;
+  right:0;
+  display:block;
+  height:30px !important;
+  top:0 !important;
+  width:auto !important;
+  right: 0 px !important;
+  left: 85% !important;
+
+}
+
 #main .candidates-link:before {
   content: "\276E";
   padding-right: 10px;
@@ -53,6 +69,7 @@ a {
 #main .candidates-link {
   left: 0;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 #main .issues-link:after {
   content: "\276F";
@@ -60,6 +77,8 @@ a {
 }
 #main .issues-link {
   right: 0;
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 #candidates .nav-link:after {
   content: "\276F";
@@ -79,7 +98,7 @@ a {
 }
 .main-title {
   position: absolute;
-  top: 12%;
+  top: 18%;
   left: 0px;
   overflow: hidden;
   max-width: 40%;
@@ -112,7 +131,8 @@ a {
   outline-offset: 10px;
   background: rgba(0,0,0,0.9);
   color: #fff;
-  line-height: 2em;
+  line-height: 1.7em;
+  font-size: 0.9em;
 }
 #candidates .page-content {
   min-height: 200%;
@@ -143,6 +163,8 @@ a {
   border: 1px dotted #fff;
   height: 160px;
   width: 160px;
+  background-repeat: no-repeat;
+  background-position:center;
 }
 #candidates ul li .caption {
   position: absolute;
@@ -190,7 +212,7 @@ a {
 #issues .sort-issue {
   float: left;
   padding-left:15%;
-  width: 25%;
+  width: 30%;
 }
 #issues .sort-issue .issue {
   font-size: 36px;
@@ -230,7 +252,7 @@ a {
 }
 #issues .issues-quotes {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 #issues .issues-quotes .quote {
   position: relative;
@@ -284,6 +306,8 @@ a {
   float: left;
   width: 100px;
   height: 100px;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 .biography .biography-main {
   float: right;

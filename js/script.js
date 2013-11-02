@@ -28,7 +28,7 @@ $(function() {
       _ref = $("#quotes").children();
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         q = _ref[_i];
-        $(q).show();
+        $(q).hide();
       }
     } else {
       _ref1 = $("#quotes").children();
