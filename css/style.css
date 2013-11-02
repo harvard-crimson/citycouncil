@@ -36,6 +36,8 @@ a {
   cursor: pointer;
   font-size: 20px;
   font-weight: 100;
+  color: white;
+  text-shadow: 2px 2px 10px black;
 
   text-transform: lowercase;
   -moz-transition: padding 0.2s;
@@ -52,7 +54,6 @@ a {
 }
 #main .candidates-link {
   left: 0;
-  color: #fff;
 }
 #main .issues-link:after {
   content: "\276F";
@@ -85,9 +86,9 @@ a {
   max-width: 40%;
   padding: 20px 40px;
   text-align: right;
-  outline: 1px dotted #000;
+  outline: 1px solid #000;
   outline-offset: 10px;
-  background: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
 }
 .main-title h1 {
@@ -108,22 +109,22 @@ a {
   overflow: hidden;
   max-width: 40%;
   padding: 20px 40px;
-  outline: 1px dotted #000;
+  outline: 1px solid #000;
   outline-offset: 10px;
-  background: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
   line-height: 2em;
 }
 #candidates .page-content {
-  min-height: 200%;
+  min-height: 100%;
   padding: 40px;
-  background: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
 }
 #candidates h1 {
   margin: 0 0 30px;
   padding-bottom: 6px;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px solid #fff;
   font-size: 48px;
 }
 #candidates h1 strong {
@@ -132,7 +133,7 @@ a {
 #candidates ul {
   list-style: none;
   padding: 0;
-  max-width: 1000px;
+  max-width: 90%;
 }
 #candidates ul li {
   display: inline-block;
@@ -140,7 +141,7 @@ a {
   margin: 12px 24px 12px 0;
 }
 #candidates ul li .thumbnail {
-  border: 1px dotted #fff;
+  border: 1px solid #fff;
   height: 160px;
   width: 160px;
 }
@@ -170,13 +171,13 @@ a {
 #issues .page-content {
   min-height: 100%;
   padding: 40px;
-  background: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
 }
 #issues h1 {
   margin: 0 0 30px;
   padding-bottom: 6px;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px solid #fff;
   font-size: 48px;
   text-align: right;
 }
@@ -269,8 +270,7 @@ a {
   z-index: 200;
   background: #fff;
   width: 500px;
-  padding: 20px;
-  padding-top:0px !important;
+  padding: 30px;
   margin-left: -270px !important;
   border-radius: 4px;
   box-shadow: 0px 0px 10px #000;
@@ -288,6 +288,9 @@ a {
 .biography .biography-main {
   float: right;
   width: 380px;
+}
+.biography .biography-main p {
+  margin: 0;
 }
 .biography .biography-main .biography-info ul {
   list-style: none;
