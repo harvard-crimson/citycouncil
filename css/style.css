@@ -57,13 +57,13 @@ a {
   position: absolute;
   right: 0;
   display: block;
-  height: 30px !important;
-  top: 0 !important;
+  height: 30px;
+  top: 0;
   width: auto;
 }
 
 .thclinkback img {
-  height: 100% !important;
+  height: 100%;
 }
 
 #main .candidates-link:before {
