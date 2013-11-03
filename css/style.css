@@ -50,18 +50,20 @@ a {
 }
 
 
-.linkback img{
+.thclinkback a {
   background:rgba(0, 0, 0, 0.6);
+  color: #fff;
   padding: 2px 4px;
-  position:absolute;
-  right:0;
-  display:block;
-  height:30px !important;
-  top:0 !important;
-  width:auto !important;
-  right: 0 px !important;
-  left: 85% !important;
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 30px !important;
+  top: 0 !important;
+  width: auto;
+}
 
+.thclinkback img#a {
+  height: 100% !important;
 }
 
 #main .candidates-link:before {

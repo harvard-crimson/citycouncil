@@ -5,7 +5,7 @@ var cleared = false;
 $(function() {
   var candidates, issues, renderQuotes;
   $("#slides").superslides({
-    hashchange: true
+    // hashchange: true
   });
   $(".modal-link").leanModal();
   $(".nav-link").click(function(e) {
