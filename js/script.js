@@ -99,5 +99,18 @@ $(function() {
     $(".candidate").removeClass("selected");
     return clearQuotes();
   });
+  load_disqus();
   
 });
+
+function load_disqus() {
+    var disqus_shortname = 'thecrimson';
+    (function() {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.src = 'http://thecrimson.disqus.com/embed.js';
+      dsq.async = true;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0])
+          .appendChild(dsq);
+    })();
+}

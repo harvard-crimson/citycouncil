@@ -141,7 +141,7 @@ a {
 #candidates .page-content {
   min-height: 100%;
   padding: 40px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   color: #fff;
 }
 #candidates h1 {
@@ -197,7 +197,7 @@ a {
   min-height: 100%;
   padding: 40px;
   background-color: rgba(0,0,0,0.8);
-  color: #fff;
+  color: #bbb;
 }
 #issues h1 {
   margin: 0 0 30px;
@@ -205,9 +205,13 @@ a {
   border-bottom: 1px solid #fff;
   font-size: 48px;
   text-align: right;
+  color: #fff;
 }
 #issues h1 strong {
   font-weight: 700;
+}
+#issues h2 {
+  color: #fff;
 }
 #issues .issues-main {
   overflow: auto;
@@ -226,6 +230,7 @@ a {
 #issues .sort-issue .issue:hover,
 #issues .sort-issue .issue.selected {
   font-weight: 700;
+  color: white;
 }
 #issues .sort-issue .clear-issues {
   margin-top: 20px;
@@ -246,6 +251,7 @@ a {
 #issues .sort-candidate .candidate:hover,
 #issues .sort-candidate .candidate.selected {
   font-weight: 700;
+  color: #fff;
 }
 #issues .sort-candidate .clear-candidates {
   margin-top: 20px;
@@ -258,10 +264,18 @@ a {
   float: left;
   width: 30%;
 }
+#quotes {
+  overflow: scroll;
+  height: 554px;
+}
 #issues .issues-quotes .quote {
   position: relative;
+  overflow: hidden;
   margin: 40px 0;
   padding-left: 20px;
+}
+#issues .issues-quotes .quote:first-child {
+  margin-top: 0px;
 }
 #issues .issues-quotes .quote:before {
   position: absolute;
@@ -273,7 +287,7 @@ a {
   font-size: 40px;
 }
 
-#issues .clear-issues{
+#issues .clear-issues {
   position:absolute;
   top: 165px;
   padding: 0 40px;
@@ -318,7 +332,7 @@ a {
   font-size: 36px;
 }
 
-.biography .cred{
+.biography .cred {
   width:100%;
   float:left;
   margin:0;
@@ -327,7 +341,7 @@ a {
   font-style:italic;
 }
 
-.biography .tag{
+.biography .tag {
   font-size: 15px;
   font-style:italic;
 }
@@ -352,4 +366,14 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+#comments {
+  background-color: rgba(0,0,0,.8)
+}
+#article-comments {
+  box-sizing: border-box;
+  width: 60%;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
 }
