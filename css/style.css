@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic");
+@import url("http://fonts.googleapis.com/css?family=Lato");
 html,
 body {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 100;
   color: #222;
 }
